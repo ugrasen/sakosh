@@ -1,0 +1,5 @@
+<div id="notLoginSection" class="container" ng-show="!loggedIn">
+<p>You are not logged in .</p>
+<p><a href="#/" >Click here</a> to Login.</p>
+</div>
+<div id="errorPageSection" ng-include="'error.html'" ng-show="loggedIn"></div>

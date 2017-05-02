@@ -1,0 +1,45 @@
+/*====================================
+Author: www.visionbharati.com
+===================================*/
+
+
+#menu {
+    background-color:#906dc5;
+   
+}
+
+/*=====================================
+  HEADERS STYLES 
+    ===================================*/
+
+
+.header-sec .overlay{
+    background:rgba(73, 29, 114, 0.80);
+}
+
+  /*=====================================
+  TESTIMONIALS STYLES 
+    ===================================*/
+
+.testi-sec .overlay{
+    background:rgba(73, 29, 114, 0.70);
+}
+ 
+
+/*=====================================
+  PRICING STYLES 
+    ===================================*/
+
+.single-price {
+    background-color:rgba(73, 29, 114,1);
+}
+.multi-price {
+    background-color:#906dc5;
+}
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+ .myfooter {
+    background-color:#906dc5;
+}

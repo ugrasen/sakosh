@@ -1,0 +1,227 @@
+    <div id="home" ng-controller="exploreIndiaCtrl">
+	<!--HEADER SECTION END-->
+	
+		<!-- SECTION-1 -->
+	<section class="info" id="info">
+		<div id="first-block">
+			<div class="line">
+				<h1>Working Together</h1>
+				<p>Thousand NRI happy customers.Want to know more.</p>
+				<div class="s-12 m-4 l-2 center">
+					<a href="#contact" du-smooth-scroll du-scrollspy offset="30"
+						class="btn btn-default" role="button">Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="services" id="services" scroll-bookmark="services">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-10 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!--<h3 data-scroll-reveal="enter from the bottom after 0.1s">
+						 All About the Indian Culture
+					</h3>-->
+                    <h1 class="arrow">All About the Indian Culture</h1>
+					<div class="divider-black"></div>
+				</div>
+			</div>
+			<p>India is one of the oldest civilizations in the world with a
+				rich cultural heritage. India has achieved all-round socio-economic
+				progress during the last 63 years of its Independence. India has
+				become self-sufficient in agricultural production and is now one of
+				the top industrialized countries in the world.</p>
+			<p>As the 7th largest country in the world, India stands apart
+				from the rest of Asia, marked off as it is by mountains and the sea,
+				which give the country a distinct geographical entity. Bounded by
+				the Great Himalayas in the north, it stretches southwards and at the
+				Tropic of Cancer, tapers off into the Indian Ocean between the Bay
+				of Bengal on the east and the Arabian Sea on the west.</p>
+			<div class="row ">
+				<div ng-repeat="service in services"
+					data-sr-container='{ "reset":true, "vFactor": 0.2 }'>
+					<div class="crop col-lg-6 col-md-4 col-sm-4 col-lg-offset-0"
+						data-scroll-reveal="{{service.scroll}}">
+						<img ng-src="{{service.image1}}"
+							class="img-thumbnail img-responsive" alt="test" />
+						<h4>
+							<strong>{{service.name}}</strong>
+						</h4>
+						<i>{{service.heading}}</i>
+						<p>{{service.text}}</p>
+					</div>
+				</div>
+			</div>
+			<p>India holds virtually every kind of landscape imaginable. An
+				abundance of mountain ranges and national parks provide ample
+				opportunity for eco-tourism and trekking, and its sheer size
+				promises something for everyone.</p>
+			<p>Experience exotic India live like a maharaja in the rich
+				ambiance of royal forts and palaces that are now heritage hotels;
+				luxuriate in the serene beauty of a coral island with its turquoise
+				lagoon; participate in the exuberance of a village fair or a
+				colourful festival; day dream on a house boat drifting down the palm
+				- fringed backwaters; delight in the grace of a dancer or shop till
+				you drop - buying exquisite silks, carved figurines, brass and
+				silver ware, marble inlaid with semi-precious stones, finely crafted
+				jewellery, miniature paintings, carpets, at unbelievable prices.</p>
+			<p>India, perhaps, is the only nation in the world that is multi
+				linguistic, multi cultural and multi ethnic. That is why India is
+				epitome of unity in diversity.</p>
+		</div>
+
+
+	</section>
+	<!--services SECTION END-->
+	<section class="features">
+		<div class="overlay">
+			<div class="container">
+				<div class="row text-center">
+					<div
+						class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<!--<h3 data-scroll-reveal="enter from the bottom after 0.1s">
+							<strong> Colors of India </strong>
+						</h3>-->
+						<h1 class="arrow">Colors of India </h1>
+						<div class="divider-black"></div>
+						<flex-slider slide="slide in slides track by $index" animation="slide">
+							<li>
+								<img class="image-circle" ng-src="{{slide.image}}"  alt="colorsofindia" style="margin:auto;height:70%;width:70%;" />
+							</li>
+						</flex-slider>
+					</div>
+				</div>
+						
+			</div>
+			
+		</div>
+
+	</section>
+	<!--colors of India SECTION END-->
+	<section class="testi-sec">
+		<div class="overlay">
+			<div class="container">
+				<div class="row text-center">
+					<div
+						class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<h3 data-scroll-reveal="enter from the bottom after 0.1s">
+							<strong> The visit to India remains a fascinating
+								experience for all to cherish throughout their life. </strong>
+						</h3>
+						<h4 data-scroll-reveal="enter from the bottom after 0.8s">
+							<i class="fa fa-quote-left "></i> The cultural and architectural
+							tradition of India has been influenced and has changed according
+							to the different dynasties that ruled this great land. These
+							cultural tours allow you to catch a glimpse of the diverse
+							culture of India. <i class="fa fa-quote-right "></i> <br /> <span
+								class="pull-right"><strong>-Mark Zukerberg</strong></span>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--TESTIMONIAL SECTION END-->
+	<section class="features" id="features" scroll-bookmark="features">
+		<div class="container">
+			<div class="row text-center">
+				<div
+					class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!-- <h3 data-scroll-reveal="enter from the bottom after 0.1s">
+						<strong> Awesome Attractions </strong>
+					</h3>-->
+					<h1 class="arrow">Awesome Attractions </h1>
+					<div class="divider-black"></div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-lg-12 col-md-6 col-sm-6 text-center" data-scroll-reveal="enter from the left after 0.4s">
+					<div class="btn-group" ng-repeat="attract in attractions">
+						<button  class="btn btn btn-primary1 btn-sm" ng-click="showContent(attract.id);" 
+							ng-class="content == {{attract.id}} ? 'btn-attr-white' : 'btn-attr-explore'">
+							{{attract.name}}
+						</button>
+					</div>
+					
+						<div ng-repeat="attract in attractions" id="{{attract.id}}" ng-show="content == {{attract.id}}">
+							<div class="pull-left">
+								<i class=" {{attract.icon}} "></i>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">
+									<strong> {{attract.name}} </strong>
+								</h4>
+								<p>{{attract.desc}}</p>
+							</div>
+						</div>						
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--FEATURES SECTION END-->
+	<section class="services text-center " id="pricing">
+		<div class="container">
+			<div class="row text-center">
+				<div
+					class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!-- <h3 data-scroll-reveal="enter from the bottom after 0.1s">
+						<strong> Gallery </strong>
+					</h3>-->
+					<h1 class="arrow">Gallery</h1>
+					<div class="divider-black"></div>
+				</div>
+			</div>
+		<ul id="slideshow">
+			<li ng-repeat="gall in gallery">
+				<h3>{{gall.title}}</h3>
+				<span>{{gall.image}}</span>
+				<p>{{gall.desc}}</p>
+				<a href="#"><img ng-src="{{gall.image}}" class="gallery-thumbnail"  alt="Orange Fish"/></a>
+			</li>
+		
+	</ul>
+	<div id="wrapper">
+		<div id="fullsize">
+			<div id="imgprev" class="imgnav" title="Previous Image"></div>
+			<div id="imglink"></div>
+			<div id="imgnext" class="imgnav" title="Next Image"></div>
+			<div id="image"></div>
+			<div id="information">
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="thumbnails">
+			<div id="slideleft" title="Slide Left"></div>
+			<div id="slidearea">
+				<div id="slider"></div>
+			</div>
+			<div id="slideright" title="Slide Right"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	
+	
+	
+	$('slideshow').style.display='none';
+	$('wrapper').style.display='block';
+	var slideshow=new TINY.slideshow("slideshow");
+	window.onload=function(){
+		slideshow.auto=true;
+		slideshow.speed=3;
+		slideshow.link="linkhover";
+		slideshow.info="information";
+		slideshow.thumbs="slider";
+		slideshow.left="slideleft";
+		slideshow.right="slideright";
+		slideshow.scrollSpeed=4;
+		slideshow.spacing=5;
+		slideshow.active="#fff";
+		slideshow.init("slideshow","image","imgprev","imgnext","imglink");
+	}
+	</script>
+	</section>
+	<!--PRICING SECTION END-->
+</div>

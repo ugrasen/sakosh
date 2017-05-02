@@ -1,0 +1,317 @@
+<div id="home" ng-controller="weCareCtrl">
+	<!--HEADER SECTION END-->
+
+	<!-- SECTION-1 -->
+	<section class="info" id="info">
+		<div id="first-block">
+			<div class="line">
+				<h1>Working Together</h1>
+				<p>Thousand NRI happy customers.Want to know more.</p>
+				<div class="s-12 m-4 l-2 center">
+					<a href="#contact" du-smooth-scroll du-scrollspy offset="30"
+						class="btn btn-default" role="button">Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--TESTIMONIAL SECTION END-->
+	<section class="features" id="features" scroll-bookmark="features">
+		<div class="container">
+			<div class="row text-center">
+				<div
+					class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!-- <h3 data-scroll-reveal="enter from the bottom after 0.1s">
+						<strong> We Care </strong>
+					</h3> -->
+					<h1 class="arrow">Know About We Care</h1>
+					<div class="divider-black"></div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-lg-12 col-md-6 col-sm-6 text-center"
+					data-scroll-reveal="enter from the left after 0.4s">
+					<div class="btn-group" ng-repeat="care in cares">
+						<button class="btn btn-info btn-sm"
+							ng-click="showContent(care.id);"
+							ng-class="content == {{care.id}} ? 'btn-attr-white' : 'btn-attr-wecare'">
+							{{care.name}}</button>
+					</div>
+
+					<div ng-repeat="care in cares" id="{{care.id}}"
+						ng-show="content == {{care.id}}">
+						<div class="media-body">
+							<h4 class="media-heading">
+								<strong> {{care.name}} </strong>
+							</h4>
+							<p>{{care.desc}}</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--PRICING SECTION END-->
+	<section class="testi-sec">
+		<div class="overlay">
+			<div class="container">
+				<div class="row text-center">
+					<div
+						class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<!-- <h3 data-scroll-reveal="enter from the bottom after 0.1s">
+							<strong> What Our Clients Says </strong>
+						</h3>-->
+						<h1 class="arrow">What Our Clients Says </h1>
+						<div class="divider-white"></div>
+						<h4 data-scroll-reveal="enter from the bottom after 0.8s">
+							<i class="fa fa-quote-left "></i> VBCS-We Care, gives the perfect
+							platform to all to include their loved ones in the journey to
+							that dream world where u wants them desperately.<i
+								class="fa fa-quote-right "></i> <br /> <span class="pull-right"><strong>-Jimmy
+									Kelly</strong></span>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--FEATURES SECTION END-->
+	<section class="services" id="services" scroll-bookmark="services">
+		<div class="container">
+			<div class="row text-center">
+				<div
+					class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!-- <h3 data-scroll-reveal="enter from the bottom after 0.1s">
+						<strong> Our services </strong>
+					</h3>-->
+					<h1 class="arrow">We Care - Services  </h1>
+					<div class="divider-black"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div ng-repeat="service in services"
+					data-sr-container='{ "reset":true, "vFactor": 0.2 }'>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-0"
+						data-scroll-reveal="{{service.scroll}}">
+						<img ng-src="{{service.image}}"
+							class="img-thumbnail img-responsive" alt="test"
+							style="height: 20em; width: 30em;" />
+						<h4>
+							<strong>{{service.name}}</strong>
+						</h4>
+						<i>{{service.heading}}</i>
+						<p>{{service.text}}</p>
+						<div data-toggle="modal" data-target="{{service.modal}}">
+							<button class="btn btn-sm btn-info readmore-btn" role="button">
+								Read More <i class="fa fa-arrow-circle-right"></i>
+							</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  Services content in Modal -->
+			<!-- Modal -->
+			<div class="modal fade" id="HealthCare" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="pull-left">
+								<i class=" fa fa-ra fa-3x "></i>
+							</div>
+							<h4 class="modal-title">
+								<strong> Health Care </strong>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<p>Our Professional Aging Life Care Managers specialize in
+								providing comprehensive aging life care management services,
+								patient advocacy, and assisting elders and their families with
+								planning for and meeting long-term care needs. Care Managers at
+								The Cameron Group have extensive experience and training in
+								gerontology, social work, nursing, and counseling and provide
+								services such as:</p>
+							<ul>
+								<li>Assessing clients' physical, psychological, social, and
+									emotional needs.</li>
+								<li>Appointment reminders, Coordinating and managing care
+									and services to help older adults thrive at home or in
+									facilities.<br>
+								<li>Arranging, screening, and monitoring in/out-home help,
+									such as companions or home health aides.
+								<li>Overseeing the quality of care provided in the home or
+									in a facility.
+								<li>Coordinating any transitions or residence moves.
+								<li>Reviewing financial, legal, and medical issues and
+									offering safe referrals to qualified professionals.
+								<li>Offering counseling and emotional support.
+								<li>Advocating for consistent adherence to the clients'
+									wishes and values within complex medical systems and throughout
+									the aging process.
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- 24 X 7 Companionship Modal -->
+			<div class="modal fade" id="24X7Companionship" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="pull-left">
+								<i class=" fa fa-history fa-3x "></i>
+							</div>
+							<h4 class="modal-title">
+								<strong>24 X 7 Companionship</strong>
+							</h4>
+						</div>
+						<div class="modal-body">
+
+							<p>Every client has an advocate on call 24/7 committed to
+								client dignity and comfort. Your Care Coordinator knows your
+								loved one's care plan, needs, schedule, likes, and dislikes. He
+								will ensure that care givers are available around the clock to
+								manage emergencies. Single point of contact for any requirement.
+							
+							<p>Additionally, each Caring Companion uses our cutting-edge
+								technology to keep families informed about their loved one's
+								status. Using daily reports, real-time updates, and photos, a
+								Caring Companion gives you the information you need &#8212 a
+								"window into the living room" so you can relax and know your
+								loved one is safe and comfortable.
+							<p>Wouldn't it be great if you could count on someone else to
+								find the right companions with the right skills for your family?
+								And worry about finding a backup when your regular companion is
+								sick or on vacation?
+							<p>Our client care coordinators select companions to match
+								your family's needs. We provide the right companion, at the
+								right time - with no unpleasant surprises. We are on call 24 x 7
+								for emergencies so you can sleep through the night.</p>
+							<a>Read more... <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="HouseHoldServices" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="pull-left">
+								<i class=" fa fa-database fa-3x "></i>
+							</div>
+							<h4 class="modal-title">
+								<strong> House Hold Services </strong>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<p>Our parents suffer very badly on this issue as they can't
+								take care of the all the house hold services properly e.g.
+								paying the utility bills, banking, Grocery, Pharmacy,
+								Mobility/Transportation Services etc.</p>
+							<ul>
+								<li>Grocery shopping</li>
+								<li>Errands and transportation</li>
+								<li>Laundry, ironing and House cleaning
+									(Daily/by-Weekly/Weekly)</li>
+								<li>Help with utility bill payments(Phone re-charge,
+									Electricity bills, Income Tax)</li>
+								<li>Insurance Premium (LIC or any other Insurance)</li>
+								<li>Supervise home maintenance and repairs</li>
+								<li>General shopping</li>
+								<li>Watch movies (arranging old movies)</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="FoodNCateringServices" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="pull-left">
+								<i class=" fa fa-send fa-3x "></i>
+							</div>
+							<h4 class="modal-title">
+								<strong> Food & Catering Services </strong>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<p>
+								Once a senior parent or disabled family member can no longer
+								cook a nourishing meal for themselves, it won't be long before
+								their health suffers. As part of our home care meal service, our
+								care givers can prepare complete, nutritionally balanced
+								breakfasts, lunches and dinners with the right portion sizes for
+								good health.<br> <br>As per requirement our
+								coordinator will provide special diet to the parent. <br>On
+								special occasion we will be treat them with special diet
+								considering all the health issues and doctor's recommendation. <br>Our
+								coordinator will be keeping separate prescription records and as
+								per that they will be serving the food to the parents.
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="Socialactivities" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="pull-left">
+								<i class=" fa fa-puzzle-piece fa-3x "></i>
+							</div>
+							<h4 class="modal-title">
+								<strong> Social activities </strong>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<p>Recent studies have proven that boredom and depression can
+								have a very real effect on physical, emotional and mental
+								health. So to avoid boredom, our team will look for some scope
+								to entertain the parents.
+							<p>We will try to gift them some wonderful moments with some
+								entertainments like celebrating their Birthday, Anniversary, or
+								taking them to religious places, or involving them in some
+								social.
+							<p>We would also like to arrange some party or get together
+								at house and bring the close people so that parents can have a
+								wonderful day.</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--services SECTION END-->
+
+</div>

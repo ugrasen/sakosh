@@ -1,0 +1,64 @@
+/*====================================
+Author: www.visionbharati.com
+===================================*/
+
+
+#menu {
+    background-color:#244e60;
+   
+}
+
+/*=====================================
+  Button Color 
+    ===================================*/
+.btn-info, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background-color: #244e60 !important;
+    border-color: #244e60 !important;
+}
+
+.btn-info:hover {
+	background-color:rgba(68, 148, 182, 0.9) !important;
+}
+
+/*=====================================
+  HEADERS STYLES 
+    ===================================*/
+.header-sec {
+	background: url(../../img/techresearch/TechResearch001.jpg) no-repeat center center;
+	background-attachment: fixed;
+}
+
+.header-sec .overlay{
+    background:rgba(68, 148, 182, 0.5);
+}
+
+  /*=====================================
+  TESTIMONIALS STYLES 
+    ===================================*/
+.testi-sec {
+    background: url(../../img/techresearch/Consultancy.jpeg) no-repeat center center;
+    background-attachment: fixed;
+}
+
+.testi-sec .overlay{
+    background:rgba(68, 148, 182, 0.7);
+}
+ 
+
+/*=====================================
+  PRICING STYLES 
+    ===================================*/
+
+.single-price {
+    background-color:rgba(68, 148, 182, 1);
+}
+.multi-price {
+    background-color:#244e60;
+}
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+ .myfooter {
+    background-color:#244e60;
+}

@@ -1,0 +1,43 @@
+<div id="signInHeaderSection" class="container" ng-show="!loggedIn">
+	<div id="signInSection" class="col-lg-7 col-sm-8 container"
+		ng-controller="UserController">
+		<h3 id="signInMessage" class="form-signin-heading">Please sign in</h3>
+		<div id="signInAlert" class="alert alert-danger" ng-show='errorLogin'>Oops!
+			There was an error logging in. Double check your User name and
+			Password and try again.</div>
+		<form id="signInForm" class="form-horizontal" role="form"
+			ng-submit=submit()>
+			<div id="userNameFormGroup" class="form-group">
+				<label id="userNameLabel" class="col-sm-2 control-label"
+					for="userName">User Name</label>
+				<div id="userNameSection" class="col-sm-8">
+					<input id="userNameValue" ng-model="userName" name="userName"
+						type="text" class="form-control" placeholder="Username" required
+						autofocus="true">
+				</div>
+			</div>
+			<div id="passwordFormGroup" class="form-group">
+				<label id="passwordLabel" class="col-sm-2 control-label"
+					for="password">Password</label>
+				<div id="passwordSection" class="col-sm-8">
+					<input id="passwordValue" ng-model="password" name="password"
+						type="password" class="form-control" placeholder="Password"
+						required>
+				</div>
+			</div>
+			<div id="userSubmitFormGroup" class="form-group">
+				<div id="userSubmitFormGroup" class="col-sm-offset-2 col-sm-10">
+					<button id="userSubmitButton" class="btn btn-default" type="submit">
+						<span class="glyphicon glyphicon-log-in"></span> Sign in
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="notLoginSection" class="container" ng-show="loggedIn">
+	<p id="notLoginMsg">You are already logged in. Please sign out or
+		click <a ng-href="#/home"
+										class1="thumbnail text-center">HERE[HOME] <i
+										class="fa fa-arrow-circle-right"></i></a> to continue working</p>
+</div>

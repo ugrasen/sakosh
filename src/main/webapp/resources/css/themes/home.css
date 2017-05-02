@@ -1,0 +1,85 @@
+/*====================================
+Author: www.visionbharati.com
+===================================*/
+
+
+#menu {
+    background-color:#5e5a64;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#5e5a64),to(#222));    
+}
+
+.home_services1 .image { position: relative; height: 400px; width: auto;max-height: 400px; }
+.home_services .image img { width: auto;
+  height: 400px;
+  max-height: 400px; }
+
+/*=====================================
+  Button Color 
+    ===================================*/
+.btn-info, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background-color: #5e5a64 !important;
+    border-color: #5e5a64 !important;
+    background-image: none;
+}
+
+.btn-info:hover {
+	background-color:rgba(162, 152, 175, 0.9) !important;
+}
+
+
+/*===========================
+  INFO BLOCK 
+===========================*/
+.info {
+	display: block;
+}
+#first-block {
+    background: none repeat scroll 0 0 #5e5a64;
+    padding: 3em 2em;
+    text-align: center;
+    color: #fff
+}
+
+
+/*=====================================
+  HEADERS STYLES 
+    ===================================*/
+.header-sec {
+	background: url(../../img/home/home_header.jpg) no-repeat center center;
+	background-attachment: fixed;
+}
+
+.header-sec .overlay{
+    background:rgba(162, 152, 175, 0.4);
+}
+
+  /*=====================================
+  TESTIMONIALS STYLES 
+    ===================================*/
+.testi-sec {
+    background: url(../../img/common/common_testi.jpg) no-repeat center center;
+    background-attachment: fixed;
+}
+
+.testi-sec .overlay{
+    background:rgba(162, 152, 175, 0.8);
+}
+ 
+
+/*=====================================
+  PRICING STYLES 
+    ===================================*/
+
+.single-price {
+    background-color:rgba(162, 152, 175, 1);
+}
+.multi-price {
+    background-color:#5e5a64;
+}
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+ .myfooter {
+    background-color:#5e5a64;
+}

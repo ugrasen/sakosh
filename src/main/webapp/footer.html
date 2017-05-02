@@ -1,0 +1,165 @@
+<!--CONTACT SECTION START-->
+<section class="light-bg text-center" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="arrow">Drop us a line</h1>
+				<div class="divider-black"></div>
+				<p data-scroll-reveal="enter from the bottom after 0.3s">We are always listening..</p>
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h3>Need Help?</h3>
+				<p>You can call us or send us your concerns. We will get back to
+					you as soon as possible.</p>
+				<p>The local offices can also be contacted using email ids
+					provided in the location section.
+				<p>
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="social-buttons">
+							<li><a href="#" class="social-btn"><i
+									class="fa fa-dribbble"></i></a></li>
+							<li><a href="#" class="social-btn"><i
+									class="fa fa-twitter"></i></a></li>
+							<li><a
+								href="mailto:support@visionbharati.com?Subject=Enquiry"
+								target="_top" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 col-md-offset-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<strong class="panel-title">Get in touch..</strong>
+					</div>
+					<div ng-controller="ContactController" class="panel-body">
+						<form ng-submit="submit(contactform)" name="contactform"
+							method="post" action="" class="form-horizontal" role="form">
+							<div class="form-group"
+								ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+								<label for="inputName" class="col-lg-2 control-label">Name</label>
+								<div class="col-lg-10">
+									<input ng-model="formData.inputName" type="text"
+										class="form-control" id="inputName" name="inputName"
+										placeholder="Your Name" required>
+								</div>
+							</div>
+							<div class="form-group"
+								ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+								<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+								<div class="col-lg-10">
+									<input ng-model="formData.inputEmail" type="email"
+										class="form-control" id="inputEmail" name="inputEmail"
+										placeholder="Your Email" required>
+								</div>
+							</div>
+							<div class="form-group"
+								ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+								<label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+								<div class="col-lg-10">
+									<input ng-model="formData.inputSubject" type="text"
+										class="form-control" id="inputSubject" name="inputSubject"
+										placeholder="Subject Message" required>
+								</div>
+							</div>
+							<div class="form-group"
+								ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+								<label for="inputMessage" class="col-lg-2 control-label">Message</label>
+								<div class="col-lg-10">
+									<textarea ng-model="formData.inputMessage" class="form-control"
+										rows="4" id="inputMessage" name="inputMessage"
+										placeholder="Your message..." required></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-offset-2 col-lg-10">
+									<button type="submit" class="btn btn-info"
+										ng-disabled="submitButtonDisabled">Send Message</button>
+								</div>
+							</div>
+						</form>
+						<p ng-class="result" style="padding: 15px; margin: 0;">{{
+							resultMessage }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--CONTACT SECTION END-->
+
+<!-- LOCATION SECTION -->
+<section class="dark-bg text-center" id="location"
+	data-sr-container='{ "reset":true, "vFactor": 0.2 }'>
+	<!-- <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="arrow">Office Locations</h1>
+				<div class="divider-black"></div>
+				<p data-scroll-reveal="enter from the bottom after 0.3s">
+					We have local offices in US, UK and Canada and soon we will expand
+					ourself across the world.<br />Why not give us a call?<br />
+				</p>
+			</div>
+		</div>
+		<div class="row contact-details">
+			<div class="col-md-4">
+				<div class="light-box box-hover">
+					<h2>
+						<span>USA Office</span>
+					</h2>
+					<p>
+						<i class="fa fa-map-marker"></i><span> 1001 S 18th St <br />Philadelphia,
+							PA 19146, USA
+						</span>
+					</p>
+					<p>
+						<i class="fa fa-paper-plane"></i><span>
+							VisionUSA@visionbharati.com</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="light-box box-hover">
+					<h2>
+						<span>UK Office</span>
+					</h2>
+					<p>
+						<i class="fa fa-map-marker"></i><span> 25 John St <br />Cambridge
+							CB1 1DT, UK
+						</span>
+					</p>
+					<p>
+						<i class="fa fa-paper-plane"></i><span>
+							VisionUK@visionbharati.com</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="light-box box-hover">
+					<h2>
+						<span>CA Office</span>
+					</h2>
+					<p>
+						<i class="fa fa-map-marker"></i><span> 169 Roxton Rd<br />Oakville,
+							ON L6H 6M8, Canada
+						</span>
+					</p>
+					<p>
+						<i class="fa fa-paper-plane"></i><span>
+							VisionCA@visionbharati.com</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--LOCATION SECTION END-->
+<!--FOOTER SECTION START-->
+<div class="myfooter">&copy; 2016 visionbharati.com</div>
+<!--FOOTER SECTION END-->

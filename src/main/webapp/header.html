@@ -1,0 +1,71 @@
+<!-- Override Navbar -->
+<div ng-controller="navController" ng-init="genNavList([{ name:'HOME', url:'#home' },{name:'DIVISIONS', url:'#home_services'},{name:'ABOUT-US', url:'#features'}])">
+
+</div>
+
+<!--HEADER SECTION START-->
+
+<style>
+.header-sec2{
+  color: #fff;
+}
+.header-sec2 .overlay {
+	background: rgba(8, 134, 74, 0.00);
+	min-height: 80vh;
+}
+
+.header-top-height .overlay {
+	height: 99vh;
+}
+
+.header-sec2 h2 {
+    color: #fff;
+    padding-top: 150px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 800;
+     margin: 40px 0 10px;
+}
+
+.header-sec2 p {
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 500;
+}
+</style>
+
+<section class="header-sec2" id="home">
+	<div class="overlay">
+		<div class="container">
+			<div class="row text-center">
+				<div
+					class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<div class="column-container clearfix"
+						data-sr-container='{ "reset":true, "vFactor": 0.2 }'>
+						<h2 data-scroll-reveal="enter from the bottom after 0.1s">
+							<strong> Vision Bharati<sup> <img
+									class="logo-custom" src="resources/img/common/common_logo.jpg"
+									alt="Vision Bharati" /></sup></strong>
+						</h2>
+						<p data-scroll-reveal="enter from the bottom after 0.8s">Only
+							one life to live..shape up your every moment.</p>
+						<br /> <br />
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<a href="#home_services" du-smooth-scroll du-scrollspy offset="30" class="btn btn-info"
+								role="button"><strong>Get Started</strong></a>
+						</div>
+					</div>
+				</div>
+				<div class="fullscreen-bg">
+    <video loop muted autoplay poster="resources/img/common/Tropical.jpg" class="fullscreen-bg__video">
+        <source src="resources/img/common/Tropical.webm" type="video/webm">
+        <source src="resources/img/common/Tropical.mp4" type="video/mp4">
+        <source src="resources/img/common/Tropical.ogv" type="video/ogg">
+    </video>
+</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+

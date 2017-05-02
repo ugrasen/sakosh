@@ -1,0 +1,141 @@
+/*====================================
+Author: www.visionbharati.com
+===================================*/
+
+
+#menu {
+    background-color:#995a17;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#995a17),to(#222)); 
+   
+}
+
+/*===========================
+  INFO BLOCK 
+===========================*/
+.info {
+	display: block;
+	padding:0;
+}
+#first-block {
+    background: none repeat scroll 0 0 #995a17;
+    padding: 3em 2em;
+    text-align: center;
+    color: #fff
+}
+
+/*=====================================
+  Button Color 
+    ===================================*/
+.btn-info, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background-color: #995a17 !important;
+    border-color: #995a17 !important;
+    background-image: none;
+
+}
+}
+
+.btn-info:hover {
+	background-color:rgba(168, 157, 145, 0.9) !important;
+}
+
+.btn-attr-explore{
+	margin: 2em;
+	background-color: #995a17 !important;
+}
+
+.btn-attr-white{
+	margin: 2em;
+	background-color: #ea8c00 !important;
+}
+/*=====================================
+  HEADERS STYLES 
+    ===================================*/
+.header-sec {
+	background: url(../../img/exploreindia/exploreindia_header.jpg) no-repeat center center;
+	background-attachment: fixed;
+}
+
+.header-sec .overlay{
+    background:rgba(168, 157, 145, 0.4);
+}
+
+  /*=====================================
+  TESTIMONIALS STYLES 
+    ===================================*/
+.testi-sec {
+    background: url(../../img/exploreindia/ExploreIndia.jpg) no-repeat center center;
+    background-attachment: fixed;
+}
+
+
+.testi-sec .overlay{
+    background:rgba(168, 157, 145, 0.8);
+}
+ 
+
+.features h3{
+	padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+/*=====================================
+  PRICING STYLES 
+    ===================================*/
+
+.single-price {
+    background-color:rgba(168, 157, 145, 1);
+}
+.multi-price {
+    background-color:#995a17;
+}
+
+.gallery-thumbnail{
+	height: 90px;
+    width: 150px;	
+}
+/*images with the same width*/
+.crop {
+    height: 300px;
+    /*width: 400px;*/
+    overflow: hidden;
+}
+.crop img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Image Slider */
+#slideshow {list-style:none; color:#fff}
+#slideshow span {display:none}
+#wrapper {width:606px; margin:50px auto; display:none}
+#wrapper * {margin:0; padding:0}
+#fullsize {position:relative; width:600px; height:400px; padding:2px; border:1px solid #ccc; background:#000}
+#information {position:absolute; bottom:0; width:595px; height:0; background:#000; color:#fff; overflow:hidden; z-index:200; opacity:.7; filter:alpha(opacity=70)}
+#information h3 {padding:4px 8px 3px; font-size:14px}
+#information p {padding:0 8px 8px}
+#image {width:0px;padding:0px;}
+#image img {position:absolute; z-index:25; width:595px;height:395px;}
+.imgnav {position:absolute; width:25%; height:306px; cursor:pointer; z-index:150}
+#imgprev {left:0; background:url(../../img/common/left.gif) left center no-repeat}
+#imgnext {right:0; background:url(../../img/common/right.gif) right center no-repeat}
+#imglink {position:absolute; height:306px; width:100%; z-index:100; opacity:.4; filter:alpha(opacity=40)}
+.linkhover {display:none;background:url(../../img/common/link.gif) center center no-repeat} 
+#thumbnails {margin-top:10px}
+#slideleft {float:left; width:20px; height:81px; background:url(../../img/common/scroll-left.gif) center center no-repeat; background-color:#222}
+#slideleft:hover {background-color:#333}
+#slideright {float:right; width:20px; height:81px; background:#222 url(../../img/common/scroll-right.gif) center center no-repeat}
+#slideright:hover {background-color:#333}
+#slidearea {float:left; position:relative; width:556px; margin-left:5px; height:81px; overflow:hidden}
+#slider {position:absolute; left:0; height:81px}
+#slider img {cursor:pointer; border:1px solid #666; padding:2px}
+
+
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+
+ .myfooter {
+    background-color:#995a17;
+}

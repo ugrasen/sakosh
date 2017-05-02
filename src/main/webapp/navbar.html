@@ -1,0 +1,139 @@
+<!--NAVBAR SECTION START-->
+
+
+
+
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                  <a class="navbar-brand" href="#!"><span style="color:#fff">VISION BHARATI</span><sup><img
+					class="logo-custom" src="resources/img/common/common_logo.jpg"
+					alt="Vision Bharati" /></sup></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li></li>
+          </ul>
+          <div ng-controller="navController" ng-init="genNavList()">
+          <ul class="nav navbar-nav navbar-right">
+          <li id="{{navtab.name}}" ng-repeat="navtab in navtabs">
+          <a ng-href="{{navtab.url}}" du-smooth-scroll du-scrollspy offset="30">{{navtab.name}}</a>
+          </li>
+       <!-- <li><a href="#home" du-smooth-scroll du-scrollspy offset="30">HOME</a></li>
+				<li><a href="#services" du-smooth-scroll du-scrollspy offset="40">SERVICES</a></li>
+				<li><a href="#features" du-smooth-scroll du-scrollspy offset="40">PORTFOLIO</a></li>
+		-->			
+				<li><a href="#contact" du-smooth-scroll du-scrollspy offset="40">CONTACT</a></li>
+			
+          </ul>
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!--
+<style>
+.ng-pageslide {
+	background: #eee;
+}
+</style>
+<div class="navbar navbar-inverse nav-justified" id="menu"
+	sticky-nav="fix-to-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<!-- sup is used as a hack here to make image up - ->
+			<a class="navbar-brand" href="#!"><sup><img
+					class="logo-custom" src="resources/img/common/common_logo.jpg"
+					alt="Vision Bharati" /></sup></a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right"> 
+			    <li><a href="#home" du-smooth-scroll du-scrollspy offset="30">HOME</a></li>
+				<li><a href="#services" du-smooth-scroll du-scrollspy offset="30">SERVICES</a></li>
+				<li><a href="#features" du-smooth-scroll du-scrollspy offset="30">PORTFOLIO</a></li>
+				<li><a href="#contact" du-smooth-scroll du-scrollspy offset="30">CONTACT</a></li>
+				<li><a href="mailto:support@visionbharati.com?Subject=Enquiry"
+					target="_top"> <i class="fa fa-envelope-o"></i><span
+						class="home-mail">e-mail: support@visionbharati.com</span></a></li>
+		   <!-- 				
+				<li ng-controller="pageslideCtrl" style="padding-left: 50px"><a
+					href ng-click="toggle()"><i class="fa fa-bars fa-2x"
+						aria-hidden="true"></i></a>
+					<div pageslide ps-open="checked" ps-side="top" ps-size="400px">
+						<div style="padding: 2px" id="demo-right">
+							<div class="sidebar" ng-controller="homeCtrl">
+								<div class="container text-center">
+									<div class="row contact-details">
+										<div class="col-md-4">
+											<div class="light-box box-hover">
+												<h2>
+													<span>USA Office</span>
+												</h2>
+												<p>
+													<i class="fa fa-map-marker"></i><span> 1001 S 18th
+														St <br />Philadelphia, PA 19146, USA
+													</span>
+												</p>
+												<p>
+													<i class="fa fa-paper-plane"></i><span>
+														VisionUSA@visionbharati.com</span>
+												</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="light-box box-hover">
+												<h2>
+													<span>UK Office</span>
+												</h2>
+												<p>
+													<i class="fa fa-map-marker"></i><span> 25 John St <br />Cambridge
+														CB1 1DT, UK
+													</span>
+												</p>
+												<p>
+													<i class="fa fa-paper-plane"></i><span>
+														VisionUK@visionbharati.com</span>
+												</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="light-box box-hover">
+												<h2>
+													<span>CA Office</span>
+												</h2>
+												<p>
+													<i class="fa fa-map-marker"></i><span> 169 Roxton Rd<br />Oakville,
+														ON L6H 6M8, Canada
+													</span>
+												</p>
+												<p>
+													<i class="fa fa-paper-plane"></i><span>
+														VisionCA@visionbharati.com</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a ng-click="toggle()" class="button">Close</a>
+						</div>
+					</div></li>
+			- ->
+			</ul>
+		</div>
+	</div>
+</div>
+-->
+<!--NAVBAR SECTION END-->
